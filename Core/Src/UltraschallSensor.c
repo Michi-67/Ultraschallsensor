@@ -1,5 +1,9 @@
 #include "UltraschallSensor.h"
 extern UART_HandleTypeDef huart2;
+
+const uint8_t CMD_DISTANCE[4] = {0x22, 0x00, 0x00, 0x22};
+const uint8_t CMD_TEMP[4]     = {0x11, 0x00, 0x00, 0x11};
+
 // Sends a command to the sensor and calculates the result out of the answer.
 uint16_t Sensor_ReadData(const uint8_t* command) {
     HAL_StatusTypeDef status;

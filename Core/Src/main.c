@@ -46,8 +46,6 @@ TIM_HandleTypeDef htim2;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-const uint8_t CMD_DISTANCE[4] = {0x22, 0x00, 0x00, 0x22};
-const uint8_t CMD_TEMP[4]     = {0x11, 0x00, 0x00, 0x11};
 uint16_t last_value = 0;
 /* USER CODE END PV */
 
